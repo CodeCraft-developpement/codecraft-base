@@ -1,5 +1,6 @@
 plugins {
     id 'com.axelor.app'
+    id "org.flywaydb.flyway" version "${flywayVersion}"
 }
 
 apply from: "../../versions.gradle"
@@ -7,4 +8,13 @@ apply from: "../../versions.gradle"
 axelor {
     title "codecraft-base"
     description "CodeCraft Base"
+}
+
+flyway {
+    url = "${flywayUrl}"
+    user = "${flywayUser}"
+    password = "${flywayPassword}"
+    table = "${flywayTableCodecraftBase}"
+    baselineVersion = '1'
+    cleanDisabled = false
 }
