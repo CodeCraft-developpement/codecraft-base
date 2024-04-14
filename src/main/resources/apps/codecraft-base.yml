@@ -1,0 +1,14 @@
+---
+name: CodeCraft Base
+code: CodeCraft Base
+typeSelect: standard
+isExperimental: false
+installOrder: 10000
+description: |
+  CodeCraft Base
+image: codecraft-base.png
+modules:
+  codecraft-base
+dependsOn:
+  - base
+sequence: -1000
