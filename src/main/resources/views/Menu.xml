@@ -3,6 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_7.0.xsd">
 
-  <menuitem name="codecraft-core-menu-item-root" order="-10000" title="CodeCraft" icon="home"/>
+  <menuitem name="codecraft-core-menu-item-root" order="-10000" title="CodeCraft"
+    icon="home"/>
 
 </object-views>
