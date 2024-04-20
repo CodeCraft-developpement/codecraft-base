@@ -20,9 +20,9 @@ flyway {
     table = "${flywayTableCodecraftBase}"
     baselineVersion = '1.0.0.0000'
     cleanDisabled = false
-    locations = ['org/codecraft/apps/base/db/migration','classpath:base/db/migration']
+    locations = ['classpath:org/codecraft/apps/base/db/migration','classpath:base/db/migration']
     schemas = ['public']
     sqlMigrationPrefix = 'Base_V'
-    callbacks = ['org.codecraft.apps.base.db.migration.BeforeMigrate']
+    callbacks = ['org.codecraft.apps.base.db.migration.AfterMigrate']
 }
 

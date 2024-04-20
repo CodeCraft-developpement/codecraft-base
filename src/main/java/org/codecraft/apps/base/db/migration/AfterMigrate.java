@@ -4,7 +4,7 @@ import org.flywaydb.core.api.callback.Callback;
 import org.flywaydb.core.api.callback.Context;
 import org.flywaydb.core.api.callback.Event;
 
-public class BeforeMigrate implements Callback {
+public class AfterMigrate implements Callback {
 
   @Override
   public boolean supports(Event event, Context context) {
