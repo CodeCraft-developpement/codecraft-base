@@ -1,6 +1,6 @@
 ---
-name: CodeCraft Base
-code: CodeCraft Base
+name: CodecraftBase
+code: Codecraft Base
 typeSelect: standard
 isExperimental: false
 installOrder: 10000

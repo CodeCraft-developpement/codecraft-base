@@ -7,11 +7,7 @@
     model="org.codecraft.apps.base.db.AppCodecraftBase" width="large" canDelete="false"
     canNew="false" canCopy="false">
     <panel name="mainPanel">
-      <field name="customer">
-        <viewer><![CDATA[
-          <strong>Codecraft base</strong>
-        ]]></viewer>
-      </field>
+      <label name="labelDescription" title="Codecraft base"/>
     </panel>
   </form>
 </object-views>
