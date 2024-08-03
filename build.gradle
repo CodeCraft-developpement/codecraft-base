@@ -1,6 +1,5 @@
 plugins {
     id 'com.axelor.app'
-    id "org.flywaydb.flyway" version "${flywayVersion}"
 }
 
 apply from: "../../versions.gradle"
@@ -13,16 +12,9 @@ axelor {
 group = 'org.codecraft.apps'
 version = '1.0.0'
 
-flyway {
-    url = "${flywayUrl}"
-    user = "${flywayUser}"
-    password = "${flywayPassword}"
-    table = "${flywayTableCodecraftBase}"
-    baselineVersion = '1.0.0.0000'
-    cleanDisabled = false
-    locations = ['classpath:org/codecraft/apps/base/db/migration','classpath:base/db/migration']
-    schemas = ['public']
-    sqlMigrationPrefix = 'Base_V'
-    callbacks = ['org.codecraft.apps.base.db.migration.AfterMigrate']
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
 }
 
