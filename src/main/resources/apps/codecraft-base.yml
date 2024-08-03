@@ -1,6 +1,6 @@
 ---
 name: CodecraftBase
-code: Codecraft Base
+code: codecraft-base
 typeSelect: standard
 isExperimental: false
 installOrder: 10000
@@ -10,5 +10,4 @@ image: codecraft-base.png
 modules:
   codecraft-base
 dependsOn:
-  - base
 sequence: -1000
